@@ -25,26 +25,30 @@ export default {
   }
 };
 </script>
-
 <style scoped>
 .links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 колонки */
+  gap: 20px;
+  /* Расстояние между карточками */
 }
 
 .card {
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
+  background-color: #f9f9f9;
 }
 
 .card h2 {
   margin: 0 0 10px;
+  font-size: 1.5em;
 }
 
 .card p {
   margin: 0 0 10px;
+  color: #555;
 }
 
 .card a {
@@ -67,5 +71,13 @@ export default {
 
 .card button:hover {
   background-color: #cc0000;
+}
+
+/* Медиа-запрос для маленьких экранов */
+@media (max-width: 768px) {
+  .links {
+    grid-template-columns: 1fr;
+    /* 1 колонка */
+  }
 }
 </style>

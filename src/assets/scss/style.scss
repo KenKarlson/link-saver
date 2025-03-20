@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
+  background-image: url(../img/bg.png);
 }
 
 #app {
@@ -27,6 +28,13 @@ input :active{
 
 input :focus{
   outline: none;
+}
+.container{
+  margin: 0;
+  padding: 10px;
+  background-color: #fff;
+  border:none;
+  border-radius: 6px;
 }
     
 

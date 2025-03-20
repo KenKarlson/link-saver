@@ -1,8 +1,11 @@
 <template>
   <div id="app">
-    <h1>Link Saver "Cererbro"</h1>
-    <AddLinkComponent />
-    <LinkListComponent />
+    <div class="container">
+      <h1>Link Saver "Cererbro"</h1>
+      <AddLinkComponent />
+      <LinkListComponent />
+    </div>
+
   </div>
 </template>
 
