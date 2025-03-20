@@ -60,9 +60,11 @@ input :focus{
 }
 
 .card button {
+  margin: 10px 0;
   background-color: #ff4d4d;
   color: white;
   border: none;
+  border-radius: 6px;
   padding: 5px 10px;
   cursor: pointer;
 }

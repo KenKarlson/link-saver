@@ -5,12 +5,29 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    links: [] // Массив для хранения ссылок
+    links: [
+      {
+        url: 'https://ya.ru',
+        title: 'Yandex',
+        description: 'Searcher to internet'
+      },
+      {
+        url: 'https://mail.ru',
+        title: 'Mail',
+        description: 'Mail to internet'
+      },
+      {
+        url: 'https://github.com/KenKarlson',
+        title: 'GitHub',
+        description: 'My git in internet'
+      }
+    ] // Начальные данные
   },
   mutations: {
     // Мутация для добавления ссылки
     ADD_LINK(state, link) {
-      state.links.push(link);
+      //state.links.push(link); Добавить в конец
+      state.links.unshift(link); //Добавить в начало
     },
     // Мутация для удаления ссылки
     REMOVE_LINK(state, index) {

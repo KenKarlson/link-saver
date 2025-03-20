@@ -62,6 +62,7 @@ export default {
   border: none;
   padding: 5px 10px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .card button:hover {

@@ -43,8 +43,24 @@ textarea,
 button {
   display: block;
   width: 100%;
+  /* Убедитесь, что ширина 100% */
   margin-bottom: 10px;
   padding: 10px;
   font-size: 16px;
+  box-sizing: border-box;
+  /* Учитываем padding и border в общей ширине */
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 </style>
