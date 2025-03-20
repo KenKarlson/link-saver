@@ -11,18 +11,18 @@
 
 <script>
 export default {
-  name: 'LinkListComponent', // Указываем имя компонента
+  name: "LinkListComponent", // Указываем имя компонента
   computed: {
     // Получаем ссылки из хранилища через геттер
     links() {
       return this.$store.getters.allLinks;
-    }
+    },
   },
   methods: {
     removeLink(index) {
-      this.$store.dispatch('removeLink', index); // Отправляем действие в хранилище
-    }
-  }
+      this.$store.dispatch("removeLink", index); // Отправляем действие в хранилище
+    },
+  },
 };
 </script>
 <style scoped>
@@ -52,7 +52,7 @@ export default {
 }
 
 .card a {
-  color: #007BFF;
+  color: #007bff;
   text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ export default {
 }
 
 .card button {
-  background-color: #ff4d4d;
+  background-color: #ed7b7b;
   color: white;
   border: none;
   padding: 5px 10px;
@@ -73,11 +73,19 @@ export default {
   background-color: #cc0000;
 }
 
-/* Медиа-запрос для маленьких экранов */
+/* Медиа-запросы для маленьких экранов */
 @media (max-width: 768px) {
   .links {
     grid-template-columns: 1fr;
     /* 1 колонка */
+  }
+}
+@media (max-width: 480px) {
+  .card {
+    padding: 8px;
+  }
+  .card h2 {
+    font-size: 1.2em;
   }
 }
 </style>
